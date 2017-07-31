@@ -2,10 +2,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { CalculadoraRomanaComponent } from './calculadora-romana/calculadora-romana.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CalculadoraRomanaComponent
   ],
   imports: [
     BrowserModule
