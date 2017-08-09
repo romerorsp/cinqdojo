@@ -24,7 +24,7 @@ describe('CalculadoraRomanaComponent', () => {
     expect(component.soma('V', 'V')).toBe('X');
   });
 
-  it ('traduz o numero em romando', () => {
+  it ('deve traduzir o número 3 em romanos', () => {
     expect(component.traduz(3)).toBe('III');
   });
 });

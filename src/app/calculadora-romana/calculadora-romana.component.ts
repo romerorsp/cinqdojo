@@ -30,33 +30,16 @@ export class CalculadoraRomanaComponent implements OnInit {
   }
 
   soma(num1: string, num2: string): string {
-    //let soma = this.traducao[num1] + this.traducao[num2];
-    //this.traducao.find()
-    let soma = this.traducao.find
-      (
-      c => c.key === num1
-      ).value;
-
-
-    soma += this.traducao.find(
-      c => c.key === num2
-    ).value;
-
-    return this.traducao.find(
-      c => c.value === soma
-    ).key;
+    let soma = this.traducao.find(c => c.key === num1).value + 
+               this.traducao.find(c => c.key === num2).value;
+    return this.traducao.find(c => c.value === soma).key;
   }
 
   traduz(num :number):string {
     let result='';
     if (num < 4){
-      for(let x = 0; x < num; x++){
-        result += 'I';
-      }
+      return 'I'.repeat(num);
     }
-    
-
-
     return result;
   }
 
