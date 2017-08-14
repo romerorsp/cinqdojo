@@ -11,14 +11,6 @@ export class AppComponent {
 
   constructor() {
     const calculator = new RomanCalculator();
-    console.log(calculator.toNumber('I'));
-    console.log(calculator.toNumber('III'));
-    console.log(calculator.toNumber('IV'));
-    console.log(calculator.toNumber('V'));
-    console.log(calculator.toNumber('VIII'));
-    console.log(calculator.toNumber('IX'));
-    console.log(calculator.toNumber('X'));
-    console.log(calculator.toNumber('MCDXIII'));
-    console.log(calculator.toNumber('MXXXVI'));
+    // console.log(calculator.toRoman(4));
   }
 }

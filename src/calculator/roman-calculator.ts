@@ -41,6 +41,7 @@ export class RomanCalculator {
         const mapped = RomanCalculator.mapping[i].key;
         while (value - mapped >= 0) {
           result += RomanCalculator.mapping[i].value;
+          value -= mapped;
         }
       }
     }
