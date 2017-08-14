@@ -19,12 +19,7 @@ describe('CalculadoraRomanaComponent', () => {
     fixture.detectChanges();
   });
 
-  it('deve adicionar dois numeros romanos', () => {
-
-    expect(component.soma('V', 'V')).toBe('X');
-  });
-
-  it ('deve traduzir o número 3 em romanos', () => {
-    expect(component.traduz(3)).toBe('III');
+  it('should be created', () => {
+    expect(component).toBeTruthy();
   });
 });
