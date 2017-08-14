@@ -1,10 +1,10 @@
-import { Ng310717Page } from './app.po';
+import { Ng140817Page } from './app.po';
 
-describe('ng310717 App', () => {
-  let page: Ng310717Page;
+describe('ng140817 App', () => {
+  let page: Ng140817Page;
 
   beforeEach(() => {
-    page = new Ng310717Page();
+    page = new Ng140817Page();
   });
 
   it('should display welcome message', () => {
