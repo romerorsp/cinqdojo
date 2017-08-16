@@ -1,12 +1,51 @@
-<p>
-  calculadora-romana works!
-</p>
-<p>Romano para decimal</p>
-<input [(ngModel)]="valor"/>
-<button (click)="somar()" >+</button>
-<button (click)="sub()" >-</button>
-<button (click)="div()" >/</button>
-<button (click)="mul()" >*</button>
-<button (click)="ce()">RESET</button>
+<p>Calculadora Romana</p>
+<input [(ngModel)]="current" placeholder="enter new roman" disabled />
 <p>{{result}}</p>
 <p>{{roman}}</p>
+<table>
+  <tr>
+    <td>
+      <button (click)="type('I')">&nbsp;I&nbsp;</button>
+    </td>
+    <td>
+      <button (click)="type('V')">&nbsp;V&nbsp;</button>
+    </td>
+    <td>
+      <button (click)="type('X')">&nbsp;X&nbsp;</button>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <button (click)="type('L')">&nbsp;L&nbsp;</button>
+    </td>
+    <td>
+      <button (click)="type('C')">&nbsp;C&nbsp;</button>
+    </td>
+    <td>
+      <button (click)="type('D')">&nbsp;D&nbsp;</button>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <button (click)="type('M')">&nbsp;M&nbsp;</button>
+    </td>
+    <td>
+      <button (click)="add()">&nbsp;+&nbsp;</button>
+    </td>
+    <td>
+      <button (click)="sub()">&nbsp;-&nbsp;</button>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <button (click)="div()">&nbsp;/&nbsp;</button>
+    </td>
+    <td>
+      <button (click)="mul()">&nbsp;*&nbsp;</button>
+    </td>
+    <td>
+      <button (click)="calculate()">&nbsp;=&nbsp;</button>
+    </td>
+  </tr>
+</table>
+<button (click)="ce()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>

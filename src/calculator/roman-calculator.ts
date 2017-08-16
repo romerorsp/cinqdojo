@@ -1,5 +1,4 @@
 import { KeyValue } from './key-value';
-
 export class RomanCalculator {
 
   private static mapping: Array<KeyValue> = [
@@ -66,5 +65,13 @@ export class RomanCalculator {
 
   public getComputed(): number {
     return this.computed;
+  }
+
+  public getRomanComputed(): string {
+    return this.toRoman(this.getComputed());
+  }
+
+  public setCurrent(value: string): void {
+    this.computed = this.toNumber(value);
   }
 }

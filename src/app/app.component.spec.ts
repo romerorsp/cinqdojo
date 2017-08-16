@@ -1,3 +1,5 @@
+import { FormsModule } from '@angular/forms';
+import { CalculadoraRomanaComponent } from './calculadora-romana/calculadora-romana.component';
 import { TestBed, async } from '@angular/core/testing';
 
 import { AppComponent } from './app.component';
@@ -6,8 +8,10 @@ describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
-        AppComponent
+        AppComponent,
+        CalculadoraRomanaComponent
       ],
+      imports: [ FormsModule ]
     }).compileComponents();
   }));
 
